@@ -66,13 +66,24 @@
     }
     section p{color:#374151;font-size:15px;}
 
-    .edu-card{
-      background:#f3f4f6;
-      padding:16px;
-      border-radius:10px;
-      margin-bottom:12px;
-      border-left:4px solid #8b5cf6;
+    table{
+      width:100%;
+      border-collapse:collapse;
+      background:#f9fafb;
+      border-radius:12px;
+      overflow:hidden;
+      box-shadow:0 6px 15px rgba(0,0,0,0.1);
     }
+    table th, table td{
+      padding:12px;
+      text-align:left;
+    }
+    table thead{
+      background:#8b5cf6;
+      color:#ffffff;
+    }
+    table tbody tr{border-bottom:1px solid #e5e7eb;}
+    table tbody tr:last-child{border-bottom:none;}
 
     .card{
       background:#f9fafb;
@@ -119,6 +130,7 @@
       section{padding:18px;}
       .card{flex-direction:column;align-items:flex-start;}
       .contact-links{flex-direction:column;}
+      table th, table td{font-size:14px;}
     }
   </style>
 </head>
@@ -138,7 +150,6 @@
     <div class="intro">
       <div class="avatar">
          <img src="sarang-post.jpeg" alt="Profile">
-        
       </div>
       <h1>Sarang Gawade</h1>
       <p class="subtitle">Web & Software Enthusiast | Lifelong Learner | Aspiring Developer</p>
@@ -147,8 +158,8 @@
     <section id="About">
       <h2>About Me</h2>
       <p>
-        I am Sarang Gawade,currently persuing Btech in Computer Science Engineering at Pimpri 
-        Chinchwad University,I'm passionate about technology and development. 
+        I am Sarang Gawade, currently persuing Btech in Computer Science Engineering at Pimpri 
+        Chinchwad University. I'm passionate about technology and development. 
         I enjoy building creative solutions, exploring new tools and learning concepts in computer science. 
         My goal is to grow as a software developer and contribute to impactful projects.
       </p>
@@ -156,14 +167,30 @@
 
     <section id="Education">
       <h2>Education</h2>
-      <div class="edu-card">
-        <p>10th - Infant Jesus High School</p>
-        <p>Year: 2021 | Grade: 88%</p>
-      </div>
-      <div class="edu-card">
-        <p>12th - SNBP Jr College</p>
-        <p>Year: 2023 | Grade: 81%</p>
-      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Qualification</th>
+            <th>Institution</th>
+            <th>Year</th>
+            <th>Grade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>10th</td>
+            <td>Infant Jesus High School</td>
+            <td>2021</td>
+            <td>88%</td>
+          </tr>
+          <tr>
+            <td>12th</td>
+            <td>SNBP Jr College</td>
+            <td>2023</td>
+            <td>81%</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
 
     <section id="Projects">
@@ -206,6 +233,7 @@
         </div>
       </div>
     </section>
+
     <section id="Contact">
       <h2>Contact Me</h2>
       <p>If you’d like to get in touch, feel free to reach out through the links below:</p>
@@ -219,5 +247,3 @@
   </div>
 </body>
 </html>
-
-
